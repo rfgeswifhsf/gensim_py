@@ -62,6 +62,7 @@ query_bow = dictionary.doc2bow(words)
 print('语料TF-idf',end='')
 pprint(tfidf[query_bow])
 
+
 # 相似度
 from gensim import similarities
 
