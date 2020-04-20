@@ -3,8 +3,10 @@
 '''
 from  pprint import pprint
 
+# 语料
 documents = "Human machine interface for lab abc computer applications"
 
+# 语料库
 text_corpus = [
     "Human machine interface for lab abc computer applications",
     "A survey of user opinion of computer system response time",
