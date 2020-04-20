@@ -66,3 +66,4 @@ print('以下哪项不属于该序列：',model.doesnt_match(['男人', '女人'
 sim1=model.most_similar(['男人'])
 print(sim1)
 
+

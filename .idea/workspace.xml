@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d6d0501-fe63-48db-8da8-e454c39e29cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/model_test/Doc2vec_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model_test/doc2vec.model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_test/FastTest.model" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/model_test/FastText_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_test/word2vec.model" beforeDir="false" afterPath="$PROJECT_DIR$/model_test/word2vec.model" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model_test/word2vec_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/model_test/word2vec_test.py" afterDir="false" />
@@ -52,29 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Doc2vec_test">
-    <configuration name="CorporaAndVectorSpaces" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="gensim_py" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CorporaAndVectorSpaces.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.FastText_test">
     <configuration name="Doc2vec_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="gensim_py" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,6 +67,28 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_test/Doc2vec_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="FastText_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="gensim_py" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model_test/FastText_test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -165,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Doc2vec_test" />
+        <item itemvalue="Python.FastText_test" />
         <item itemvalue="Python.word2vec_test" />
+        <item itemvalue="Python.Doc2vec_test" />
         <item itemvalue="Python.corpora_t" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.CorporaAndVectorSpaces" />
       </list>
     </recent_temporary>
   </component>
@@ -184,7 +184,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587020562954</updated>
       <workItem from="1587020564236" duration="735000" />
-      <workItem from="1587036568401" duration="15913000" />
+      <workItem from="1587036568401" duration="17841000" />
     </task>
     <task id="LOCAL-00001" summary="gensim">
       <created>1587036712238</created>
@@ -200,7 +200,14 @@
       <option name="project" value="LOCAL" />
       <updated>1587367414594</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gensim">
+      <created>1587370025805</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587370025805</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +231,8 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/gensim_py$corpora_t.coverage" NAME="corpora_t Coverage Results" MODIFIED="1587106334895" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/gensim_py$word2vec_test.coverage" NAME="word2vec_test Coverage Results" MODIFIED="1587369502031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model_test" />
+    <SUITE FILE_PATH="coverage/gensim_py$word2vec_test.coverage" NAME="word2vec_test Coverage Results" MODIFIED="1587372183555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model_test" />
+    <SUITE FILE_PATH="coverage/gensim_py$FastText_test.coverage" NAME="FastText_test Coverage Results" MODIFIED="1587372318065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model_test" />
     <SUITE FILE_PATH="coverage/gensim_py$CorporaAndVectorSpaces.coverage" NAME="CorporaAndVectorSpaces Coverage Results" MODIFIED="1587092030665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/gensim_py$Doc2vec_test.coverage" NAME="Doc2vec_test Coverage Results" MODIFIED="1587369885160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model_test" />
     <SUITE FILE_PATH="coverage/gensim_py$test.coverage" NAME="test Coverage Results" MODIFIED="1587093869867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
