@@ -59,7 +59,7 @@ sw=model.most_similar(positive=['男人','皇帝'],negative=['女人'],topn=1)
 print(sw)
 
 sim=model.similarity('男人','皇帝')
-print(sim)
+print('二者相似度为： ',sim)
 
 print('以下哪项不属于该序列：',model.doesnt_match(['男人', '女人', '皇帝', '皇太后', '烤鸭']))
 
