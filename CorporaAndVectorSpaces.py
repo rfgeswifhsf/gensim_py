@@ -38,8 +38,13 @@ pprint(dictionary.token2id)
 dictionary.save('./diction.dict')
 
 new_doc =  "Human computer interaction"
+
+#  def doc2bow(self, document, allow_update=False, return_missing=False):
+#  document : list of str
 new_vec = dictionary.doc2bow(new_doc.lower().split())
+print('new_vec :')
 pprint(new_vec)
 
 corpus = [dictionary.doc2bow(text) for text in texts]
+print('corpus : ')
 pprint(corpus)
