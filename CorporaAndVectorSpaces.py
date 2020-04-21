@@ -34,8 +34,9 @@ pprint(texts)
 
 from gensim import corpora
 dictionary = corpora.Dictionary(texts)
-pprint(dictionary.token2id)
+print('token2id: ',dictionary.token2id)
 dictionary.save('./diction.dict')
+print('id2token: ',dictionary[0])
 
 new_doc =  "Human computer interaction"
 

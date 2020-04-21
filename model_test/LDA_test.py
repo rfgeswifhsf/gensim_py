@@ -29,11 +29,11 @@ dictionary = corpora.Dictionary(sens_list)
 #  def doc2bow(self, document, allow_update=False, return_missing=False):
 #  document : list of str
 corpus = [dictionary.doc2bow(texts) for texts in sens_list]
-pprint(corpus)
-
 lda = models.LdaModel(corpus=corpus,id2word=dictionary,num_topics=5)
 
-topic_list = lda.top_topics(corpus)
+
+
+topic_list = lda.top_topics(corpus)  #默认 topn=20,  返回主题连贯性得分
 for i, topic in enumerate(topic_list):
     print(i,topic)
 
@@ -43,7 +43,7 @@ print(lda.print_topic(3,10))
 
 # 各个document的主题分布
 every_corpus = lda.get_document_topics(corpus)
-print(every_corpus)
+
 for i in range(len(corpus)):
     print(every_corpus[i])
 
@@ -51,6 +51,10 @@ for i in range(len(corpus)):
 # 查看指定document的主题分布
 sentences= '在美国大选期间，希拉里的邮件被泄露出来了'
 sen_doc=dictionary.doc2bow(jieba.lcut(sentences))
-
 one_corpus = lda.get_document_topics(sen_doc)
 print('sentences: ',one_corpus)
+
+# 主题显示
+# show_topics(self, num_topics=10, num_words=10, log=False, formatted=True)
+pprint(lda.show_topics())
+# pprint(lda.show_topics(num_words=len(lda.id2word))) #所有词
