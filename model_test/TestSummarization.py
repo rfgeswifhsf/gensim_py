@@ -49,4 +49,4 @@ from gensim.summarization import mz_keywords
 
 # mz_keywords(text, blocksize=1024, scores=False, split=False, weighted=True, threshold=0.0)
 print('mz',mz_keywords(text,blocksize=10,weighted=False,scores=True,threshold='auto'))
-print('mz',mz_keywords(text,blocksize=5,weighted=False,scores=True,threshold=0.01))
+print('mz',mz_keywords(text,blocksize=50,weighted=False,scores=True,threshold=0.01))
