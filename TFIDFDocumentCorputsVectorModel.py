@@ -58,6 +58,8 @@ from gensim import models
 # train the model
 tfidf = models.TfidfModel(bow_corpus)
 
+
+
 # transform the "system minors" string
 words = "system minors".lower().split()
 query_bow = dictionary.doc2bow(words)
